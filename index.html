@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>قياس زمن إنهاء إجراءات الحاج</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+<h2>قياس زمن إنهاء إجراءات الحاج</h2>
+
+<button class="big-button start-button" onclick="startTimer()">▶ بدء</button>
+<button class="big-button stop-button" onclick="stopTimer()">■ إنهاء</button>
+
+<div class="timer" id="timer">00:00</div>
+
+<div style="font-size: 22px; margin-top: 20px;">
+  <label>هل الحاج مسجل له بصمة سابقًا؟</label>
+  <input type="radio" id="yes" name="fingerprint" value="نعم" checked style="transform: scale(1.5); margin: 0 10px;"> نعم
+  <input type="radio" id="no" name="fingerprint" value="لا" style="transform: scale(1.5); margin: 0 10px;"> لا
+</div>
+
+<div>
+  <input type="text" id="delayReason" placeholder="سبب التأخير (إن وجد)" style="width: 50%; font-size: 20px; padding: 10px;">
+</div>
+
+<h2 style="text-align: right; margin-top: 40px;">
+  سجل الحجاج
+  <button onclick="saveTableAsPDF()" style="font-size: 16px; padding: 5px 10px; margin-right: 10px; vertical-align: middle;">
+    💾 حفظ PDF
+  </button>
+</h2>
+
+<table id="logTable">
+  <thead>
+    <tr>
+      <th>التعداد</th>
+      <th>التاريخ</th>
+      <th>الساعة</th>
+      <th>المدة بالثواني</th>
+      <th>هل له بصمة؟</th>
+      <th>سبب التأخير</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
