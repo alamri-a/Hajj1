@@ -1,0 +1,108 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+  padding: 30px;
+  background: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.center-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+button {
+  padding: 16px 30px;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#startBtn {
+  background-color: #4CAF50;
+  color: white;
+}
+#endBtn {
+  background-color: #f44336;
+  color: white;
+}
+button[onclick*="print"] {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.timer-segment {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  font-family: monospace;
+  padding: 8px 28px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.form-section {
+  margin: 40px auto;
+}
+
+.label-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 280px;
+  max-width: 90%;
+  margin-top: 10px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.large-options input[type="radio"] {
+  width: 22px;
+  height: 22px;
+}
+.option-text {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+table {
+  margin: auto;
+  width: 95%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+th {
+  background-color: #f0f0f0;
+}
+.serial-header {
+  background-color: #dddddd;
+}
