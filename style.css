@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+h1 {
+  color: #333;
+}
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 95%;
+  background: #fff;
+}
+th, td {
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+th {
+  background-color: #f0f0f0;
+}
+button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#startBtn {
+  background-color: #4CAF50;
+  color: white;
+}
+#endBtn {
+  background-color: #f44336;
+  color: white;
+}
+#resetBtn {
+  background-color: #888;
+  color: white;
+}
+input[type="text"], select {
+  padding: 12px;
+  font-size: 16px;
+  width: 280px;
+  max-width: 90%;
+}
+.datetime-box {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 18px;
+}
+.large-options input[type="radio"] {
+  width: 25px;
+  height: 25px;
+}
+.option-text {
+  font-size: 20px;
+  padding-right: 10px;
+}

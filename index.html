@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>نموذج تتبع الحجاج</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #print-area, #print-area * {
+        visibility: visible;
+      }
+      #print-area {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>نموذج تتبع دخول الحجاج</h1>
+
+  <button id="startBtn">⏺️ بدء (تسجيل تلقائي)</button>
+  <button id="endBtn">⏹️ إنهاء</button>
+  <button id="resetBtn">♻️ تسجيل جديد</button>
+  <button onclick="window.print()">🖨️ حفظ الجدول كـ PDF</button>
+  <br><br>
+
+  <label>هل مبصم مسبقاً؟</label>
+  <div class="radio-group large-options">
+    <label><input type="radio" name="fingerprint" value="نعم" checked> <span class="option-text">نعم</span></label>
+    <label><input type="radio" name="fingerprint" value="لا"> <span class="option-text">لا</span></label>
+  </div>
+  <br><br>
+
+  <label for="delayReason">سبب التأخير (اختياري):</label>
+  <input type="text" id="delayReason" placeholder="اكتب هنا">
+  <br><br>
+
+  <div id="datetimeDisplay" class="datetime-box"></div>
+
+  <div id="print-area">
+    <h2>سجل الحجاج</h2>
+    <table id="dataTable">
+      <tr>
+        <th>التاريخ (ميلادي)</th>
+        <th>الساعة</th>
+        <th>المدة (ثواني)</th>
+        <th>مبصم؟</th>
+        <th>سبب التأخير</th>
+      </tr>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
