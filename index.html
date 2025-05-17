@@ -1,46 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>نموذج تتبع الحجاج</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/hijri-date/lib/hijri-date.js"></script>
-</head>
-<body>
-  <h1>نموذج تتبع دخول الحجاج</h1>
-
-  <button id="startBtn">⏺️ بدء (تسجيل تلقائي)</button>
-  <button id="endBtn">⏹️ إنهاء</button>
-  <button id="resetBtn">♻️ تسجيل جديد</button>
-  <button onclick="window.print()">🖨️ حفظ الجدول كـ PDF</button>
-  <br><br>
-
-  <label>هل مبصم مسبقاً؟</label>
-  <div class="radio-group">
-    <label><input type="radio" name="fingerprint" value="نعم" checked> نعم</label>
-    <label><input type="radio" name="fingerprint" value="لا"> لا</label>
-  </div>
-  <br><br>
-
-  <label for="delayReason">سبب التأخير (اختياري):</label>
-  <input type="text" id="delayReason" placeholder="اكتب هنا">
-  <br><br>
-
-  <div id="datetimeDisplay" class="datetime-box"></div>
-
-  <h2>سجل الحجاج</h2>
-  <table id="dataTable">
-    <tr>
-      <th>التاريخ (هجري)</th>
-      <th>الساعة</th>
-      <th>وقت البدء</th>
-      <th>وقت الانتهاء</th>
-      <th>المدة (ثواني)</th>
-      <th>مبصم؟</th>
-      <th>سبب التأخير</th>
-    </tr>
-  </table>
-
-  <script src="script.js"></script>
-</body>
-</html>
